@@ -4,6 +4,5 @@ node_modules
 *.iml
 typings/
 *.map
-*.js
 src/*.js
 .tscache/
