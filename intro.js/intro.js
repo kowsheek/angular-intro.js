@@ -1002,7 +1002,11 @@
         _exitIntro.call(self, self._targetElement);
       };
 
-      //buttonsLayer.appendChild(skipTooltipButton); don't add it to buttons layer
+      if (this._options.showSkip === true) {
+        skipTooltipButton.style.display = 'none';
+      }
+
+      buttonsLayer.appendChild(skipTooltipButton);
 
       //in order to prevent displaying next/previous button always
       if (this._introItems.length > 1) {
